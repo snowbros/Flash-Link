@@ -89,7 +89,7 @@ app2.controller('movie_now_control', function($scope, $http) {
 
 	var api_key = '18669e4f9c1ef894d8af25c06f082466';
 
-	var requested_url ='http://api.themoviedb.org/3/genre/16/movies?api_key=' + api_key + '&sort_by=popularity.desc';
+	var requested_url ='https://api.themoviedb.org/3/genre/16/movies?api_key=' + api_key + '&sort_by=popularity.desc';
 	
   	$http.get(requested_url).then(function (response) {
       $scope.myData = response.data.results;
