@@ -174,7 +174,7 @@ $(document).ready(function(){
 	var id = getUrlVars()["id"];
 	var api_key = '18669e4f9c1ef894d8af25c06f082466';
 	var requested_url1 ='https://api.themoviedb.org/3/movie/'+id+'/credits?api_key=' + api_key + '';
-	var requested_url ='http://api.themoviedb.org/3/movie/'+id+'?api_key=' + api_key + '';
+	var requested_url ='https://api.themoviedb.org/3/movie/'+id+'?api_key=' + api_key + '';
 	
 	$http.get(requested_url).then(function (response) {
     $scope.result = response.data;
