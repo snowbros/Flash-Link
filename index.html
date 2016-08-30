@@ -101,7 +101,7 @@
             <div class="row">
                     <div class="text-center col-md-4" style="display: flex;margin-bottom: 20px;padding: 0px 10px;" id="movie_block" ng-repeat-start="list in myData">
                         <div class="col-xs-4" ng-if="list.poster_path != null" style="background:#fff;padding:0;box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.34);">
-                        	<img ng-src="http://image.tmdb.org/t/p/w150/{{list.poster_path}}" class="img img-responsive" id="poster" style="max-height: 250px;opacity:1;"/>
+                        	<img ng-src="https://image.tmdb.org/t/p/w150/{{list.poster_path}}" class="img img-responsive" id="poster" style="max-height: 250px;opacity:1;"/>
                         </div>
                         <div class="col-xs-4" ng-if="list.poster_path == null" style="background:#fff;padding:0;box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.34);">
                         	<img ng-src="static/images/not-found.png" class="img img-responsive" id="poster" style="max-height: 250px;min-height:170px;opacity:1;"/>
@@ -139,7 +139,7 @@ app.controller('movie_control', function($scope, $http) {
 
 	var name = $("#movie_name").val();
 	var api_key = '18669e4f9c1ef894d8af25c06f082466';
-	var requested_url ='http://api.themoviedb.org/3/search/movie?api_key=' + api_key + '&query=' + name+'';
+	var requested_url ='https://api.themoviedb.org/3/search/movie?api_key=' + api_key + '&query=' + name+'';
 	$("#movie_header").html("Movies found for " +name+"");
 	console.log(requested_url);
   	$http.get(requested_url).then(function (response) {
