@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<title>Jquery</title>
+	<style type="text/css">
+		input:focus{
+    outline: none;
+}
+#span1{
+    position: absolute;
+    margin-top: 17px;
+    font-size: 13px;
+    color:#999;
+}
+
+</style>
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+		$("input").click(function(){
+			$("#span1").animate({'margin-top': '0px', 'font-size': '16px'}, "fast");
+			
+		});
+		 
+            $("input").blur(function(){
+            	if ($("#txt").val() != null && $("#txt").val() != '') { 
+				
+			} else {
+			  $("#span1").animate({'margin-top': '17px', 'font-size': '13px'}, "fast");
+                    
+                }
+		}); 
+
+	});
+</script>
+<div style="margin:25px 25px 14px 25px;">
+	
+	
+	<div id="span1">Name</div>
+	<input type="text" name="name" id="txt" style="margin-top:20px;border-top:none;border-right:none;border-left:none;border-color:#33bbff;">
+	<input type="submit" name="asd" value="submit" />
+	
+</div>
+</body>
+</html>
