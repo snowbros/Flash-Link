@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="static\angular.min.js"></script>
+	<script src="static\js\bootstrap.min.js"></script>
+	<link rel="stylesheet" href="static\css\bootstrap.css">
+	<link rel="stylesheet" href="static\css\bootstrap.min.css">
+	<link rel="stylesheet" href="static\css\custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<style type="text/css">
+		body{
+				background-image: url("static/images/home.png");
+				background-size: cover;
+    	   		background-position: center;
+		   		min-height:100vh;
+          background-attachment: fixed;
+            }
+    body:before{
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("static/images/home.png");
+       background-size: cover;
+         background-position: center;
+         z-index:-2;
+      -webkit-filter: grayscale(40%) contrast(110%);
+    }
+    body:after{
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      /*background: linear-gradient(130deg, #5B7687 30%, #485761 100%);*/
+      background: linear-gradient(-30deg, #474662 30%, #dc4450 100%);
+      z-index:-1;
+      opacity: 0.8;
+      /*-webkit-filter: grayscale(100%) contrast(110%);*/
+    }
+
+h1 ,h2,h3,h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+p{
+  font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+}
+
+
+    }
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href = "#" class = "navbar-brand">
+                <img class="img-responsive" src="static/images/logo.png" style= "max-height: 15px;
+    margin-top: 4px;">
+        </a>
+      <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+    </button>
+    </div>
+    
+    <div class = "collapse navbar-collapse navHeaderCollapse">
+        
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Find Movie</a></li>
+      <li><a href="movies_now.html">Popular Movies !!</a></li>
+      <li><a href="show_now.html">Popular TV Show !!</a></li>
+      <li ><a href="animated_movie.html">Top Animated Movies</a></li>
+      <li><a href="top_rated_movie.html">Top Rated Movies</a></li>
+      <li class="active"><a href="about_app.html">About app</a></li>
+      <li><a href="profile.html">About Me</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+        <h1>About App:</h1>
+        <ul>
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>This application provides functionality like to search movie and find details about particular movie.</p>
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>It also provide the Popular TV shows and details about it like no. of seasons and no. of episodes relished till now.</p>
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>This application also gives you a list of top rated movies, top animated movies and top rated movies.</p>
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>Flash link is created using html , css, bootstrap,Jquery,Angularjs,and <a href="https://www.themoviedb.org/" target="new"> TMDB.</a></p>
+          <p><i class="fa fa-arrow-right" aria-hidden="true"></i>Android Application will available soon</a></p>
+
+
+        </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

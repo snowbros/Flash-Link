@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="static\angular.min.js"></script>
+	<script src="static\js\bootstrap.min.js"></script>
+	<link rel="stylesheet" href="static\css\bootstrap.min.css">
+	<link rel="stylesheet" href="static\css\custom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body{
+		   background-image: url("static/images/profile.jpg");
+		   background-size: cover;
+    	   background-position: center;
+		   min-height:100vh;
+		   background-attachment: fixed;
+		}
+		body:before{
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url("static/images/profile.jpg");
+       background-size: cover;
+         background-position: center;
+         z-index:-2;
+      -webkit-filter: grayscale(40%) contrast(110%);
+    }
+    body:after{
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top:0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background:linear-gradient(-30deg, #5a5a5a 30%,#080808 100%);
+      z-index:-1;
+      opacity: 0.8;
+      /*-webkit-filter: grayscale(100%) contrast(110%);*/
+    }
+    h1 ,h2,h3,h4{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+p{
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+
+	</style>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a href = "#" class = "navbar-brand">
+                <img class="img-responsive" src="static/images/logo.png" style= "max-height: 15px;
+    margin-top: 4px;">
+        </a>
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target=".navHeaderCollapse">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+    </button>
+    
+    </div>
+    <div class = "collapse navbar-collapse navHeaderCollapse">
+        
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Find Movie</a></li>
+      <li><a href="movies_now.html">Popular Movies !!</a></li>
+      <li><a href="show_now.html">Popular TV Show !!</a></li>
+      <li><a href="animated_movie.html">Top Animated Movies</a></li>
+      <li><a href="top_rated_movie.html">Top Rated Movies</a></li>
+      <li><a href="about_app.html">About app</a></li>
+      <li class="active"><a href="profile.html">About Me</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<div class="row">
+<div class="col-md-4">
+	<div class="col-md-12">
+		<img src="static/images/dp3.jpg" class="img img-responsive img-circle" style="border:1px solid #B5B5B5;margin: 0px auto;max-height: 150px; border-style: solid; border-width: 3px; color:white;box-shadow: 2px 1px 15px #000000;'"/>
+	</div>
+	<div class="col-md-12 col-md-12 text-center" style="margin-top:20px;">
+		<h3 style="margin-left:15px;" class="text-center">KISHAN GAJJAR </h3>
+		<div class="btn-group" role="group" aria-label="Justified button group" style="margin-top:20px;"> 
+			<a href="mailto:kishanegajjar@gmail.com" class="btn btn-default" role="button"><i class="fa fa-envelope fa-4x" aria-hidden="true" target="new"></i></a> 
+			<a href="https://github.com/kishan911" class="btn btn-default" role="button"><i class="fa fa-github fa-4x" aria-hidden="true" target="new"></i></a> 
+			<a href="https://www.linkedin.com/in/kishan-gajjar-469b00104?trk=nav_responsive_tab_profile_pic" class="btn btn-default" target="new" role="button"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a> 
+	</div>
+	</div>
+	
+    </div>
+	<div class="col-md-8" style="padding-left:25px;">
+		<div class="col-md-12">
+        <h3>FACT ABOUT ME</h3>
+        <ul>
+        	<p><i class="fa fa-arrow-right" aria-hidden="true"></i> I'm webdesigner. I like to make cool and creative websites.I also like complex proramming.</p>
+			
+        	<p> <i class="fa fa-arrow-right" aria-hidden="true"></i> Creating software isn’t that easy. There a ton of things to consider. The more you actually create, the more you’ll learn.</p>
+        	<p> <i class="fa fa-arrow-right" aria-hidden="true"></i> I like programming because it involves lot of thinking, so much dedication, patience. Best thing about coding is the satisfaction you get after solving any problem.</p>
+        	<p><i class="fa fa-arrow-right" aria-hidden="true"></i> The most satisfying parts of coding to me are when I realize that I've done something that would be impossible without a computer.  </p>
+        	<p><i class="fa fa-arrow-right" aria-hidden="true"></i> Coding be like having fun ,achieving ideas ,solving problems ,helping others and of course making money !</p>
+        </ul>
+        </div>
+        
+        <div class="col-md-9 col-xs-12">
+        <h3>SKILLSET</h3>
+        	<div class="col-md-6 col-xs-6">
+        			
+        	 		<p><i class="fa fa-check" aria-hidden="true"></i> Python</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> C/C++</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Core Java</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> HTML5 and CSS3</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Bootstrap</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Javascript </p>
+        	</div>
+        	<div class="col-md-6 col-xs-6">
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Jquery</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> JSP, Servlet </p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Flask</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Angularjs</p>
+        			<p><i class="fa fa-check" aria-hidden="true"></i> Github</p>
+        	</div>
+        	
+        </div>
+        
+    </div>
+	
+</div>
+</body>
+</html>
