@@ -86,12 +86,13 @@
                         {{ result.overview }}
                     </div>
                    
-                    <div class="col-md-12">
-                        <div style="margin-bottom: 10px; padding-top:10px;">
-       
-                            <strong> Production Companies: </strong>
-                           
-                                <span style="margin-left: 10px;" ng-repeat ="tag in result.production_companies" class="label label-primary"> {{ tag.name }} </span> &nbsp;
+                   <div class="col-md-12">
+                        <strong> Production Companies: </strong>
+                    </div>
+                    
+                    <div class="col-md-12 col-xs-12" style="padding-top:0px; margin-bottom:10px">
+                        <div style="margin-bottom: 10px;">
+                            <span class ='col-md-3 col-sm-3 col-xs-6 label label-primary' style="margin-left: 10px;  margin-top:10px" ng-repeat ="tag in result.production_companies" class="label label-primary"> {{ tag.name }} </span> &nbsp;
                         
                         </div>
                     </div>
